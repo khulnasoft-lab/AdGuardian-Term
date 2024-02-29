@@ -18,7 +18,7 @@ base64 = "0.13"
 # Date + time parsing + manipulating
 chrono = "0.4"
 # Handling of terminal colors
-colored = "2.0"
+colored = "2.1"
 # Term manipulation for kb + mouse events
 crossterm = { version = "0.22.0", features = ["serde"] }
 # Extension of futures for async computation
