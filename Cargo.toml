@@ -14,7 +14,7 @@ categories = ["command-line-utilities"]
 # Error objecr for idiomatic error handling
 anyhow = "1.0"
 # For encoding auth headers
-base64 = "0.13"
+base64 = "0.21"
 # Date + time parsing + manipulating
 chrono = "0.4"
 # Handling of terminal colors
