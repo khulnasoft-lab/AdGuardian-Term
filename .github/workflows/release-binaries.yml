@@ -195,31 +195,31 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
 
       - name: Download x86_64 Binary
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: adguardian-x86_64
           path: ./target/x86_64-unknown-linux-musl/release/
 
       - name: Download ARM V7 Binary
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: adguardian-arm-v7
           path: ./target/armv7-unknown-linux-gnueabihf/release/
 
       - name: Download ARM64 Binary
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: adguardian-arm64
           path: ./target/aarch64-unknown-linux-gnu/release/
 
       - name: Download MacOS Binary
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: adguardian-macos
           path: ./target/release/
 
       - name: Download Windows Binary
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: adguardian-windows
           path: ./target/release/
