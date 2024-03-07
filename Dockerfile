@@ -1,4 +1,4 @@
-# syntax=docker/dockerfile:1.2
+# syntax=docker/dockerfile:1.7
 
 # Build application - Copy assets, install deps and compile binary
 FROM --platform=$BUILDPLATFORM rust:1.69.0-alpine AS builder
