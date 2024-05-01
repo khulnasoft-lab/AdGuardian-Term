@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `src/welcome.rs`."><title>welcome.rs - source</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../../static.files/SourceSerif4-Regular-46f98efaafac5295.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../static.files/FiraSans-Regular-018c141bf0843ffd.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../static.files/FiraSans-Medium-8f9a781e4970d388.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../static.files/SourceCodePro-Regular-562dcc5011b6de7d.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../static.files/SourceSerif4-Bold-a2c9cd1067f8b328.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../static.files/SourceCodePro-Semibold-d899c5a5c4aeb14a.ttf.woff2"><link rel="stylesheet" href="../../static.files/normalize-76eba96aa4d2e634.css"><link rel="stylesheet" href="../../static.files/rustdoc-c4dbdcde0fbd8430.css" id="mainThemeStyle"><link rel="stylesheet" id="themeStyle" href="../../static.files/light-db279b6232be9c13.css"><link rel="stylesheet" disabled href="../../static.files/dark-cf923f49f397b216.css"><link rel="stylesheet" disabled href="../../static.files/ayu-be46fdc453a55015.css"><script src="../../static.files/storage-3891ce972e3a2bf8.js"></script><script defer src="../../static.files/source-script-1b95b7cca98b26e5.js"></script><script defer src="../../source-files.js"></script><script defer src="../../static.files/main-98a684e84ae5b08b.js"></script><noscript><link rel="stylesheet" href="../../static.files/noscript-13285aec31fa243e.css"></noscript><link rel="alternate icon" type="image/png" href="../../static.files/favicon-16x16-8b506e7a72182f1c.png"><link rel="alternate icon" type="image/png" href="../../static.files/favicon-32x32-422f7d1d52889060.png"><link rel="icon" type="image/svg+xml" href="../../static.files/favicon-2c020d218678b618.svg"></head><body class="rustdoc source"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"></nav><main><nav class="sub"><a class="sub-logo-container" href="../../adguardian/index.html"><img class="rust-logo" src="../../static.files/rust-logo-151179464ae7ed46.svg" alt="logo"></a><form class="search-form"><span></span><input class="search-input" name="search" aria-label="Run search in the documentation" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><div id="help-button" title="help" tabindex="-1"><a href="../../help.html">?</a></div><div id="settings-menu" tabindex="-1"><a href="../../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../../static.files/wheel-7b819b6101059cd0.svg"></a></div></form></nav><section id="main-content" class="content"><div class="example-wrap"><pre class="src-line-numbers"><a href="#1" id="1">1</a>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `src/welcome.rs`."><title>welcome.rs - source</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../../static.files/SourceSerif4-Regular-46f98efaafac5295.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../static.files/FiraSans-Regular-018c141bf0843ffd.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../static.files/FiraSans-Medium-8f9a781e4970d388.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../static.files/SourceCodePro-Regular-562dcc5011b6de7d.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../static.files/SourceCodePro-Semibold-d899c5a5c4aeb14a.ttf.woff2"><link rel="stylesheet" href="../../static.files/normalize-76eba96aa4d2e634.css"><link rel="stylesheet" href="../../static.files/rustdoc-5bc39a1768837dd0.css"><meta name="rustdoc-vars" data-root-path="../../" data-static-root-path="../../static.files/" data-current-crate="adguardian" data-themes="" data-resource-suffix="" data-rustdoc-version="1.77.2 (25ef9e3d8 2024-04-09)" data-channel="1.77.2" data-search-js="search-dd67cee4cfa65049.js" data-settings-js="settings-4313503d2e1961c2.js" ><script src="../../static.files/storage-4c98445ec4002617.js"></script><script defer src="../../static.files/src-script-e66d777a5a92e9b2.js"></script><script defer src="../../src-files.js"></script><script defer src="../../static.files/main-48f368f3872407c8.js"></script><noscript><link rel="stylesheet" href="../../static.files/noscript-04d5337699b92874.css"></noscript><link rel="alternate icon" type="image/png" href="../../static.files/favicon-16x16-8b506e7a72182f1c.png"><link rel="alternate icon" type="image/png" href="../../static.files/favicon-32x32-422f7d1d52889060.png"><link rel="icon" type="image/svg+xml" href="../../static.files/favicon-2c020d218678b618.svg"></head><body class="rustdoc src"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"><div class="src-sidebar-title">
+            <h2>Files</h2></div></nav><div class="sidebar-resizer"></div>
+    <main><nav class="sub"><form class="search-form"><span></span><div id="sidebar-button" tabindex="-1"><a href="../../adguardian/all.html" title="show sidebar"></a></div><input class="search-input" name="search" aria-label="Run search in the documentation" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><div id="help-button" tabindex="-1"><a href="../../help.html" title="help">?</a></div><div id="settings-menu" tabindex="-1"><a href="../../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../../static.files/wheel-7b819b6101059cd0.svg"></a></div></form></nav><section id="main-content" class="content"><div class="example-wrap"><div data-nosnippet><pre class="src-line-numbers"><a href="#1" id="1">1</a>
 <a href="#2" id="2">2</a>
 <a href="#3" id="3">3</a>
 <a href="#4" id="4">4</a>
@@ -297,7 +299,7 @@
 <a href="#297" id="297">297</a>
 <a href="#298" id="298">298</a>
 <a href="#299" id="299">299</a>
-</pre><pre class="rust"><code><span class="kw">use </span>std::{
+</pre></div><pre class="rust"><code><span class="kw">use </span>std::{
     io:: {<span class="self">self</span>, Write},
     env,
     time::Duration
@@ -312,38 +314,38 @@
 <span class="doccomment">/// Reusable function that just prints success messages to the console
 </span><span class="kw">fn </span>print_info(text: <span class="kw-2">&amp;</span>str, is_secondary: bool) {
     <span class="kw">if </span>is_secondary {
-        <span class="macro">println!</span>(<span class="string">&quot;{}&quot;</span>, text.green().italic().dimmed());
+        <span class="macro">println!</span>(<span class="string">"{}"</span>, text.green().italic().dimmed());
     } <span class="kw">else </span>{
-        <span class="macro">println!</span>(<span class="string">&quot;{}&quot;</span>, text.green());
+        <span class="macro">println!</span>(<span class="string">"{}"</span>, text.green());
     };
 }
 
 <span class="doccomment">/// Prints the AdGuardian ASCII art to console
 </span><span class="kw">fn </span>print_ascii_art() {
-    <span class="kw">let </span>art = <span class="string">r&quot;
+    <span class="kw">let </span>art = <span class="string">r"
  █████╗ ██████╗  ██████╗ ██╗   ██╗ █████╗ ██████╗ ██████╗ ██╗ █████╗ ███╗   ██╗
 ██╔══██╗██╔══██╗██╔════╝ ██║   ██║██╔══██╗██╔══██╗██╔══██╗██║██╔══██╗████╗  ██║
 ███████║██║  ██║██║  ███╗██║   ██║███████║██████╔╝██║  ██║██║███████║██╔██╗ ██║
 ██╔══██║██║  ██║██║   ██║██║   ██║██╔══██║██╔══██╗██║  ██║██║██╔══██║██║╚██╗██║
 ██║  ██║██████╔╝╚██████╔╝╚██████╔╝██║  ██║██║  ██║██████╔╝██║██║  ██║██║ ╚████║
 ╚═╝  ╚═╝╚═════╝  ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝
-&quot;</span>;
+"</span>;
     print_info(art, <span class="bool-val">false</span>);
-    print_info(<span class="string">&quot;\nWelcome to AdGuardian Terminal Edition!&quot;</span>, <span class="bool-val">false</span>);
-    print_info(<span class="string">&quot;Terminal-based, real-time traffic monitoring and statistics for your AdGuard Home instance&quot;</span>, <span class="bool-val">true</span>);
-    print_info(<span class="string">&quot;For documentation and support, please visit: https://github.com/lissy93/adguardian-term&quot;</span>, <span class="bool-val">true</span>);
+    print_info(<span class="string">"\nWelcome to AdGuardian Terminal Edition!"</span>, <span class="bool-val">false</span>);
+    print_info(<span class="string">"Terminal-based, real-time traffic monitoring and statistics for your AdGuard Home instance"</span>, <span class="bool-val">true</span>);
+    print_info(<span class="string">"For documentation and support, please visit: https://github.com/lissy93/adguardian-term"</span>, <span class="bool-val">true</span>);
 }
 
 <span class="doccomment">/// Print error message, along with (optional) stack trace, then exit
 </span><span class="kw">fn </span>print_error(message: <span class="kw-2">&amp;</span>str, sub_message: <span class="kw-2">&amp;</span>str, error: <span class="prelude-ty">Option</span>&lt;<span class="kw-2">&amp;</span>Error&gt;) {
     <span class="macro">eprintln!</span>(
-        <span class="string">&quot;{}{}{}&quot;</span>,
-        <span class="macro">format!</span>(<span class="string">&quot;{}&quot;</span>, message).red(),
+        <span class="string">"{}{}{}"</span>,
+        <span class="macro">format!</span>(<span class="string">"{}"</span>, message).red(),
         <span class="kw">match </span>error {
-            <span class="prelude-val">Some</span>(err) =&gt; <span class="macro">format!</span>(<span class="string">&quot;\n{}&quot;</span>, err).red().dimmed(),
-            <span class="prelude-val">None </span>=&gt; <span class="string">&quot;&quot;</span>.red().dimmed(),
+            <span class="prelude-val">Some</span>(err) =&gt; <span class="macro">format!</span>(<span class="string">"\n{}"</span>, err).red().dimmed(),
+            <span class="prelude-val">None </span>=&gt; <span class="string">""</span>.red().dimmed(),
         },
-        <span class="macro">format!</span>(<span class="string">&quot;\n{}&quot;</span>, sub_message).yellow(),
+        <span class="macro">format!</span>(<span class="string">"\n{}"</span>, sub_message).yellow(),
     );
 
     std::process::exit(<span class="number">1</span>);
@@ -353,11 +355,11 @@
 </span><span class="kw">fn </span>get_env(key: <span class="kw-2">&amp;</span>str) -&gt; <span class="prelude-ty">Result</span>&lt;String, env::VarError&gt; {
     env::var(key).map(|v| {
         <span class="macro">println!</span>(
-            <span class="string">&quot;{}&quot;</span>,
+            <span class="string">"{}"</span>,
             <span class="macro">format!</span>(
-                <span class="string">&quot;{} is set to {}&quot;</span>,
+                <span class="string">"{} is set to {}"</span>,
                 key.bold(),
-                <span class="kw">if </span>key.contains(<span class="string">&quot;PASSWORD&quot;</span>) { <span class="string">&quot;******&quot; </span>} <span class="kw">else </span>{ <span class="kw-2">&amp;</span>v }
+                <span class="kw">if </span>key.contains(<span class="string">"PASSWORD"</span>) { <span class="string">"******" </span>} <span class="kw">else </span>{ <span class="kw-2">&amp;</span>v }
             )
             .green()
         );
@@ -365,9 +367,9 @@
     })
 }
 
-<span class="doccomment">/// Given a possibly undefined version number, check if it&#39;s present and supported
+<span class="doccomment">/// Given a possibly undefined version number, check if it's present and supported
 </span><span class="kw">fn </span>check_version(version: <span class="prelude-ty">Option</span>&lt;<span class="kw-2">&amp;</span>str&gt;) {
-    <span class="kw">let </span>min_version = Version::parse(<span class="string">&quot;0.107.29&quot;</span>).unwrap();
+    <span class="kw">let </span>min_version = Version::parse(<span class="string">"0.107.29"</span>).unwrap();
     
     <span class="kw">match </span>version {
         <span class="prelude-val">Some</span>(version_str) =&gt; {
@@ -375,20 +377,20 @@
             
             <span class="kw">if </span>adguard_version &lt; min_version {
                 print_error(
-                    <span class="string">&quot;AdGuard Home version is too old, and is now unsupported&quot;</span>,
-                    <span class="macro">format!</span>(<span class="string">&quot;You&#39;re running AdGuard {}. Please upgrade to v{} or later.&quot;</span>, version_str, min_version.to_string()).as_str(),
+                    <span class="string">"AdGuard Home version is too old, and is now unsupported"</span>,
+                    <span class="macro">format!</span>(<span class="string">"You're running AdGuard {}. Please upgrade to v{} or later."</span>, version_str, min_version.to_string()).as_str(),
                     <span class="prelude-val">None</span>,
                 );
             }
         },
         <span class="prelude-val">None </span>=&gt; {
             print_error(
-                <span class="string">&quot;Unsupported AdGuard Home version&quot;</span>,
+                <span class="string">"Unsupported AdGuard Home version"</span>,
                 <span class="macro">format!</span>(
                     <span class="macro">concat!</span>(
-                        <span class="string">&quot;Failed to get the version number of your AdGuard Home instance.\n&quot;</span>,
-                        <span class="string">&quot;This usually means you&#39;re running an old, and unsupported version.\n&quot;</span>,
-                        <span class="string">&quot;Please upgrade to v{} or later.&quot;
+                        <span class="string">"Failed to get the version number of your AdGuard Home instance.\n"</span>,
+                        <span class="string">"This usually means you're running an old, and unsupported version.\n"</span>,
+                        <span class="string">"Please upgrade to v{} or later."
                     </span>), min_version.to_string()
                 ).as_str(),
                 <span class="prelude-val">None</span>,
@@ -406,14 +408,14 @@
     username: String,
     password: String,
 ) -&gt; <span class="prelude-ty">Result</span>&lt;(), Box&lt;<span class="kw">dyn </span>std::error::Error&gt;&gt; {
-    <span class="macro">println!</span>(<span class="string">&quot;{}&quot;</span>, <span class="string">&quot;\nVerifying connection to your AdGuard instance...&quot;</span>.blue());
+    <span class="macro">println!</span>(<span class="string">"{}"</span>, <span class="string">"\nVerifying connection to your AdGuard instance..."</span>.blue());
 
-    <span class="kw">let </span>auth_string = <span class="macro">format!</span>(<span class="string">&quot;{}:{}&quot;</span>, username, password);
-    <span class="kw">let </span>auth_header_value = <span class="macro">format!</span>(<span class="string">&quot;Basic {}&quot;</span>, base64::encode(<span class="kw-2">&amp;</span>auth_string));
+    <span class="kw">let </span>auth_string = <span class="macro">format!</span>(<span class="string">"{}:{}"</span>, username, password);
+    <span class="kw">let </span>auth_header_value = <span class="macro">format!</span>(<span class="string">"Basic {}"</span>, base64::encode(<span class="kw-2">&amp;</span>auth_string));
     <span class="kw">let </span><span class="kw-2">mut </span>headers = reqwest::header::HeaderMap::new();
-    headers.insert(<span class="string">&quot;Authorization&quot;</span>, auth_header_value.parse()<span class="question-mark">?</span>);
+    headers.insert(<span class="string">"Authorization"</span>, auth_header_value.parse()<span class="question-mark">?</span>);
 
-    <span class="kw">let </span>url = <span class="macro">format!</span>(<span class="string">&quot;{}://{}:{}/control/status&quot;</span>, protocol, ip, port);
+    <span class="kw">let </span>url = <span class="macro">format!</span>(<span class="string">"{}://{}:{}/control/status"</span>, protocol, ip, port);
 
     <span class="kw">match </span>client
         .get(<span class="kw-2">&amp;</span>url)
@@ -424,17 +426,17 @@
         <span class="prelude-val">Ok</span>(res) <span class="kw">if </span>res.status().is_success() =&gt; {
             <span class="comment">// Get version string (if present), and check if valid - exit if not
             </span><span class="kw">let </span>body: Value = res.json().<span class="kw">await</span><span class="question-mark">?</span>;
-            check_version(body[<span class="string">&quot;version&quot;</span>].as_str());
+            check_version(body[<span class="string">"version"</span>].as_str());
             <span class="comment">// All good! Print success message :)
-            </span><span class="kw">let </span>safe_version = body[<span class="string">&quot;version&quot;</span>].as_str().unwrap_or(<span class="string">&quot;mystery version&quot;</span>);
-            <span class="macro">println!</span>(<span class="string">&quot;{}&quot;</span>, <span class="macro">format!</span>(<span class="string">&quot;AdGuard ({}) connection successful!\n&quot;</span>, safe_version).green());
+            </span><span class="kw">let </span>safe_version = body[<span class="string">"version"</span>].as_str().unwrap_or(<span class="string">"mystery version"</span>);
+            <span class="macro">println!</span>(<span class="string">"{}"</span>, <span class="macro">format!</span>(<span class="string">"AdGuard ({}) connection successful!\n"</span>, safe_version).green());
             <span class="prelude-val">Ok</span>(())
         }
         <span class="comment">// Connection failed to authenticate. Print error and exit
         </span><span class="prelude-val">Ok</span>(<span class="kw">_</span>) =&gt; {
             print_error(
-                <span class="kw-2">&amp;</span><span class="macro">format!</span>(<span class="string">&quot;Authentication with AdGuard at {}:{} failed&quot;</span>, ip, port),
-                <span class="string">&quot;Please check your environmental variables and try again.&quot;</span>,
+                <span class="kw-2">&amp;</span><span class="macro">format!</span>(<span class="string">"Authentication with AdGuard at {}:{} failed"</span>, ip, port),
+                <span class="string">"Please check your environmental variables and try again."</span>,
                 <span class="prelude-val">None</span>,
             );
             <span class="prelude-val">Ok</span>(())
@@ -442,8 +444,8 @@
         <span class="comment">// Connection failed to establish. Print error and exit
         </span><span class="prelude-val">Err</span>(e) =&gt; {
             print_error(
-                <span class="kw-2">&amp;</span><span class="macro">format!</span>(<span class="string">&quot;Failed to connect to AdGuard at: {}:{}&quot;</span>, ip, port),
-                <span class="string">&quot;Please check your environmental variables and try again.&quot;</span>,
+                <span class="kw-2">&amp;</span><span class="macro">format!</span>(<span class="string">"Failed to connect to AdGuard at: {}:{}"</span>, ip, port),
+                <span class="string">"Please check your environmental variables and try again."</span>,
                 <span class="prelude-val">Some</span>(<span class="kw-2">&amp;</span>e),
             );
             <span class="prelude-val">Ok</span>(())
@@ -453,7 +455,7 @@
 
 <span class="attr">#[derive(Deserialize)]
 </span><span class="kw">struct </span>CratesIoResponse {
-    <span class="attr">#[serde(rename = <span class="string">&quot;crate&quot;</span>)]
+    <span class="attr">#[serde(rename = <span class="string">"crate"</span>)]
     </span>krate: Crate,
 }
 
@@ -464,10 +466,10 @@
 
 <span class="doccomment">/// Gets the latest version of the crate from crates.io
 </span><span class="kw">async fn </span>get_latest_version(crate_name: <span class="kw-2">&amp;</span>str) -&gt; <span class="prelude-ty">Result</span>&lt;String, Box&lt;<span class="kw">dyn </span>std::error::Error&gt;&gt; {
-    <span class="kw">let </span>url = <span class="macro">format!</span>(<span class="string">&quot;https://crates.io/api/v1/crates/{}&quot;</span>, crate_name);
+    <span class="kw">let </span>url = <span class="macro">format!</span>(<span class="string">"https://crates.io/api/v1/crates/{}"</span>, crate_name);
     <span class="kw">let </span>client = reqwest::Client::new();
     <span class="kw">let </span>res = client.get(<span class="kw-2">&amp;</span>url)
-        .header(reqwest::header::USER_AGENT, <span class="string">&quot;version_check (adguardian.as93.net)&quot;</span>)
+        .header(reqwest::header::USER_AGENT, <span class="string">"version_check (adguardian.as93.net)"</span>)
         .send()
         .<span class="kw">await</span><span class="question-mark">?</span>;
 
@@ -477,49 +479,49 @@
     } <span class="kw">else </span>{
         <span class="kw">let </span>status = res.status();
         <span class="kw">let </span>body = res.text().<span class="kw">await</span><span class="question-mark">?</span>;
-        <span class="prelude-val">Err</span>(<span class="macro">format!</span>(<span class="string">&quot;Request failed with status {}: body: {}&quot;</span>, status, body).into())
+        <span class="prelude-val">Err</span>(<span class="macro">format!</span>(<span class="string">"Request failed with status {}: body: {}"</span>, status, body).into())
     }
 }
 
 <span class="doccomment">/// Checks for updates to the crate, and prints a message if an update is available
 </span><span class="kw">async fn </span>check_for_updates() {
     <span class="comment">// Get crate name and version from Cargo.toml
-    </span><span class="kw">let </span>crate_name = <span class="macro">env!</span>(<span class="string">&quot;CARGO_PKG_NAME&quot;</span>);
-    <span class="kw">let </span>crate_version = <span class="macro">env!</span>(<span class="string">&quot;CARGO_PKG_VERSION&quot;</span>);
-    <span class="macro">println!</span>(<span class="string">&quot;{}&quot;</span>, <span class="string">&quot;\nChecking for updates...&quot;</span>.blue());
+    </span><span class="kw">let </span>crate_name = <span class="macro">env!</span>(<span class="string">"CARGO_PKG_NAME"</span>);
+    <span class="kw">let </span>crate_version = <span class="macro">env!</span>(<span class="string">"CARGO_PKG_VERSION"</span>);
+    <span class="macro">println!</span>(<span class="string">"{}"</span>, <span class="string">"\nChecking for updates..."</span>.blue());
     <span class="comment">// Parse the current version, and fetch and parse the latest version
     </span><span class="kw">let </span>current_version = Version::parse(crate_version).unwrap_or_else(|<span class="kw">_</span>| {
-        Version::parse(<span class="string">&quot;0.0.0&quot;</span>).unwrap()
+        Version::parse(<span class="string">"0.0.0"</span>).unwrap()
     });
     <span class="kw">let </span>latest_version = Version::parse(
         <span class="kw-2">&amp;</span>get_latest_version(crate_name).<span class="kw">await</span>.unwrap_or_else(|<span class="kw">_</span>| {
-            <span class="string">&quot;0.0.0&quot;</span>.to_string()
+            <span class="string">"0.0.0"</span>.to_string()
         })
     ).unwrap();
 
     <span class="comment">// Compare the current and latest versions, and print the appropriate message
-    </span><span class="kw">if </span>current_version == Version::parse(<span class="string">&quot;0.0.0&quot;</span>).unwrap() || latest_version == Version::parse(<span class="string">&quot;0.0.0&quot;</span>).unwrap() {
-        <span class="macro">println!</span>(<span class="string">&quot;{}&quot;</span>, <span class="string">&quot;Unable to check for updates&quot;</span>.yellow());
+    </span><span class="kw">if </span>current_version == Version::parse(<span class="string">"0.0.0"</span>).unwrap() || latest_version == Version::parse(<span class="string">"0.0.0"</span>).unwrap() {
+        <span class="macro">println!</span>(<span class="string">"{}"</span>, <span class="string">"Unable to check for updates"</span>.yellow());
     } <span class="kw">else if </span>current_version &lt; latest_version {
-        <span class="macro">println!</span>(<span class="string">&quot;{}&quot;</span>,
+        <span class="macro">println!</span>(<span class="string">"{}"</span>,
             <span class="macro">format!</span>(
-                <span class="string">&quot;A new version of AdGuardian is available.\nUpdate from {} to {} for the best experience&quot;</span>,
+                <span class="string">"A new version of AdGuardian is available.\nUpdate from {} to {} for the best experience"</span>,
                 current_version.to_string().bold(),
                 latest_version.to_string().bold()
             ).yellow()
         );
     } <span class="kw">else if </span>current_version == latest_version {
         <span class="macro">println!</span>(
-            <span class="string">&quot;{}&quot;</span>,
-            <span class="macro">format!</span>(<span class="string">&quot;AdGuardian is up-to-date, running version {}&quot;</span>, current_version.to_string().bold()).green()
+            <span class="string">"{}"</span>,
+            <span class="macro">format!</span>(<span class="string">"AdGuardian is up-to-date, running version {}"</span>, current_version.to_string().bold()).green()
         );
     } <span class="kw">else if </span>current_version &gt; latest_version {
         <span class="macro">println!</span>(
-            <span class="string">&quot;{}&quot;</span>,
-            <span class="macro">format!</span>(<span class="string">&quot;Running a pre-released edition of AdGuardian, version {}&quot;</span>, current_version.to_string().bold()).green()
+            <span class="string">"{}"</span>,
+            <span class="macro">format!</span>(<span class="string">"Running a pre-released edition of AdGuardian, version {}"</span>, current_version.to_string().bold()).green()
         );
     } <span class="kw">else </span>{
-        <span class="macro">println!</span>(<span class="string">&quot;{}&quot;</span>, <span class="string">&quot;Unable to check for updates&quot;</span>.yellow());
+        <span class="macro">println!</span>(<span class="string">"{}"</span>, <span class="string">"Unable to check for updates"</span>.yellow());
     }
 }
 
@@ -527,7 +529,7 @@
 <span class="doccomment">/// Initiate the welcome script
 /// This function will:
 /// - Print the AdGuardian ASCII art
-/// - Check if there&#39;s an update available
+/// - Check if there's an update available
 /// - Check for the required environmental variables
 /// - Prompt the user to enter any missing variables
 /// - Verify the connection to the AdGuard instance
@@ -540,20 +542,20 @@
     <span class="comment">// Check for updates
     </span>check_for_updates().<span class="kw">await</span>;
 
-    <span class="macro">println!</span>(<span class="string">&quot;{}&quot;</span>, <span class="string">&quot;\nStarting initialization checks...&quot;</span>.blue());
+    <span class="macro">println!</span>(<span class="string">"{}"</span>, <span class="string">"\nStarting initialization checks..."</span>.blue());
 
     <span class="kw">let </span>client = Client::new();
 
     <span class="comment">// List of available flags, ant their associated env vars
     </span><span class="kw">let </span>flags = [
-        (<span class="string">&quot;--adguard-ip&quot;</span>, <span class="string">&quot;ADGUARD_IP&quot;</span>),
-        (<span class="string">&quot;--adguard-port&quot;</span>, <span class="string">&quot;ADGUARD_PORT&quot;</span>),
-        (<span class="string">&quot;--adguard-username&quot;</span>, <span class="string">&quot;ADGUARD_USERNAME&quot;</span>),
-        (<span class="string">&quot;--adguard-password&quot;</span>, <span class="string">&quot;ADGUARD_PASSWORD&quot;</span>),
+        (<span class="string">"--adguard-ip"</span>, <span class="string">"ADGUARD_IP"</span>),
+        (<span class="string">"--adguard-port"</span>, <span class="string">"ADGUARD_PORT"</span>),
+        (<span class="string">"--adguard-username"</span>, <span class="string">"ADGUARD_USERNAME"</span>),
+        (<span class="string">"--adguard-password"</span>, <span class="string">"ADGUARD_PASSWORD"</span>),
     ];
 
-    <span class="kw">let </span>protocol: String = env::var(<span class="string">&quot;ADGUARD_PROTOCOL&quot;</span>).unwrap_or_else(|<span class="kw">_</span>| <span class="string">&quot;http&quot;</span>.into()).parse()<span class="question-mark">?</span>;
-    env::set_var(<span class="string">&quot;ADGUARD_PROTOCOL&quot;</span>, protocol);
+    <span class="kw">let </span>protocol: String = env::var(<span class="string">"ADGUARD_PROTOCOL"</span>).unwrap_or_else(|<span class="kw">_</span>| <span class="string">"http"</span>.into()).parse()<span class="question-mark">?</span>;
+    env::set_var(<span class="string">"ADGUARD_PROTOCOL"</span>, protocol);
 
     <span class="comment">// Parse command line arguments
     </span><span class="kw">let </span><span class="kw-2">mut </span>args = std::env::args().peekable();
@@ -569,13 +571,13 @@
     }
 
     <span class="comment">// If any of the env variables or flags are not yet set, prompt the user to enter them
-    </span><span class="kw">for </span><span class="kw-2">&amp;</span>key <span class="kw">in </span><span class="kw-2">&amp;</span>[<span class="string">&quot;ADGUARD_IP&quot;</span>, <span class="string">&quot;ADGUARD_PORT&quot;</span>, <span class="string">&quot;ADGUARD_USERNAME&quot;</span>, <span class="string">&quot;ADGUARD_PASSWORD&quot;</span>] {
+    </span><span class="kw">for </span><span class="kw-2">&amp;</span>key <span class="kw">in </span><span class="kw-2">&amp;</span>[<span class="string">"ADGUARD_IP"</span>, <span class="string">"ADGUARD_PORT"</span>, <span class="string">"ADGUARD_USERNAME"</span>, <span class="string">"ADGUARD_PASSWORD"</span>] {
         <span class="kw">if </span>env::var(key).is_err() {
             <span class="macro">println!</span>(
-                <span class="string">&quot;{}&quot;</span>,
-                <span class="macro">format!</span>(<span class="string">&quot;The {} environmental variable is not yet set&quot;</span>, key.bold()).yellow()
+                <span class="string">"{}"</span>,
+                <span class="macro">format!</span>(<span class="string">"The {} environmental variable is not yet set"</span>, key.bold()).yellow()
             );
-            <span class="macro">print!</span>(<span class="string">&quot;{}&quot;</span>, <span class="macro">format!</span>(<span class="string">&quot;› Enter a value for {}: &quot;</span>, key).blue().bold());
+            <span class="macro">print!</span>(<span class="string">"{}"</span>, <span class="macro">format!</span>(<span class="string">"› Enter a value for {}: "</span>, key).blue().bold());
             io::stdout().flush()<span class="question-mark">?</span>;
 
             <span class="kw">let </span><span class="kw-2">mut </span>value = String::new();
@@ -585,16 +587,15 @@
     }
 
     <span class="comment">// Grab the values of the (now set) environmental variables
-    </span><span class="kw">let </span>ip = get_env(<span class="string">&quot;ADGUARD_IP&quot;</span>)<span class="question-mark">?</span>;
-    <span class="kw">let </span>port = get_env(<span class="string">&quot;ADGUARD_PORT&quot;</span>)<span class="question-mark">?</span>;
-    <span class="kw">let </span>protocol = get_env(<span class="string">&quot;ADGUARD_PROTOCOL&quot;</span>)<span class="question-mark">?</span>;
-    <span class="kw">let </span>username = get_env(<span class="string">&quot;ADGUARD_USERNAME&quot;</span>)<span class="question-mark">?</span>;
-    <span class="kw">let </span>password = get_env(<span class="string">&quot;ADGUARD_PASSWORD&quot;</span>)<span class="question-mark">?</span>;
+    </span><span class="kw">let </span>ip = get_env(<span class="string">"ADGUARD_IP"</span>)<span class="question-mark">?</span>;
+    <span class="kw">let </span>port = get_env(<span class="string">"ADGUARD_PORT"</span>)<span class="question-mark">?</span>;
+    <span class="kw">let </span>protocol = get_env(<span class="string">"ADGUARD_PROTOCOL"</span>)<span class="question-mark">?</span>;
+    <span class="kw">let </span>username = get_env(<span class="string">"ADGUARD_USERNAME"</span>)<span class="question-mark">?</span>;
+    <span class="kw">let </span>password = get_env(<span class="string">"ADGUARD_PASSWORD"</span>)<span class="question-mark">?</span>;
     
     <span class="comment">// Verify that we can connect, authenticate, and that version is supported (exit on failure)
     </span>verify_connection(<span class="kw-2">&amp;</span>client, ip, port, protocol, username, password).<span class="kw">await</span><span class="question-mark">?</span>;
 
     <span class="prelude-val">Ok</span>(())
 }
-</code></pre></div>
-</section></main><div id="rustdoc-vars" data-root-path="../../" data-static-root-path="../../static.files/" data-current-crate="adguardian" data-themes="" data-resource-suffix="" data-rustdoc-version="1.69.0 (84c898d65 2023-04-16)" data-search-js="search-8a59a8356673ec1f.js" data-settings-js="settings-f0c5c39777a9a2f6.js" data-settings-css="settings-0bcba95ff279c1db.css" ></div></body></html>
+</code></pre></div></section></main></body></html>
