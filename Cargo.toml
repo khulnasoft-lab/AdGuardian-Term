@@ -30,7 +30,7 @@ serde = { version = "1.0", features = ["derive"] }
 # Decerilization of JSON responses
 serde_json = "1.0"
 # Read and calculate semantic version numbers
-semver = "1.0"
+semver = "1.0.22"
 # Date + time manipulation
 tokio = { version = "1", features = ["full"] }
 # Terminal UI library
