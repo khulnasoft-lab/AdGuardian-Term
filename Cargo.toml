@@ -16,7 +16,7 @@ anyhow = "1.0"
 # For encoding auth headers
 base64 = "0.13"
 # Date + time parsing + manipulating
-chrono = "0.4"
+chrono = "0.4.38"
 # Handling of terminal colors
 colored = "2.0"
 # Term manipulation for kb + mouse events
